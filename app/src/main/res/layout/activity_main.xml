@@ -4,9 +4,175 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/primary_dark">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:text="Fitness App"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              >
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:id="@+id/constraintLayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="8dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginEnd="8dp"
+                  android:background="@drawable/bg_gradient_1"
+                  android:paddingTop="15dp"
+                  android:paddingBottom="15dp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.0"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="8dp"
+                      android:paddingStart="14dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:padding="4dp"
+                          android:text="Home"
+                          android:textColor="@color/primary_dark"
+                          android:textSize="16dp" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:padding="4dp"
+                          android:text="Account"
+                          android:textColor="@color/primary_dark"
+                          android:textSize="16dp" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:padding="4dp"
+                          android:text="Help"
+                          android:textColor="@color/primary_dark"
+                          android:textSize="16dp" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:padding="4dp"
+                          android:text="Refer"
+                          android:textColor="@color/primary_dark"
+                          android:textSize="16dp" />
+                  </LinearLayout>
+
+                  <ImageView
+                      android:layout_width="150dp"
+                      android:layout_height="150dp"
+                      android:src="@drawable/workout1"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+              </androidx.constraintlayout.widget.ConstraintLayout>
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:id="@+id/constraintLayout3"
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginStart="8dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginEnd="8dp"
+                  android:background="@drawable/bg_gradient_2"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                  android:foreground="?android:attr/selectableItemBackground"
+                  >
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Services"
+                      android:textColor="@color/white"
+                      android:textSize="24dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+              </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginStart="8dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginEnd="8dp"
+                  android:background="@drawable/bg_gradient_2"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Plans"
+                      android:textColor="@color/white"
+                      android:textSize="24dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+              </androidx.constraintlayout.widget.ConstraintLayout>
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_marginStart="8dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginEnd="8dp"
+                  android:background="@drawable/bg_gradient_2"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Members Report"
+                      android:textColor="@color/white"
+                      android:textSize="24dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent" />
+              </androidx.constraintlayout.widget.ConstraintLayout>
+          </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

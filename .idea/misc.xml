@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/2.xml" value="0.1" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/bg_gradient_1.xml" value="0.1" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/bg_gradient_2.xml" value="0.1" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
     </option>
   </component>
