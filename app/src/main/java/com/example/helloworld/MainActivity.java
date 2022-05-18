@@ -2,17 +2,15 @@ package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     FloatingActionButton button_account;
-    FragmentResistration membersResistration;
     FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getSupportActionBar().hide();
         //variable initialization
         button_account = findViewById(R.id.id_account);
-
-
-        fragmentManager = getSupportFragmentManager();
-        //fragments
-        membersResistration = new FragmentResistration();
-
 
         //main
         //attach listener
@@ -38,9 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.id_account){
-           FragmentTransaction ft = fragmentManager.beginTransaction();
-            ft.addToBackStack("TAG_OF_FRAGMENT");
-            ft.add(R.id.fragmentContainerView, membersResistration).commit();
+            startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
         }
     }
 

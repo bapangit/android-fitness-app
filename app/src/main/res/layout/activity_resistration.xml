@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentResistration"
-    android:background="@color/black"
-    >
-
-    <!-- TODO: Update blank fragment layout -->
-
-
+    tools:context=".RegistrationActivity"
+    android:background="@color/primary_dark">
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/idTabLayout"
         android:layout_width="match_parent"
