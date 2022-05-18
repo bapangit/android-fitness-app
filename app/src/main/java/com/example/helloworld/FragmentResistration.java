@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TableLayout;
 
+import com.example.helloworld.adapters.TabLayoutAdapter;
+import com.google.android.material.tabs.TabLayout;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link FragmentResistration#newInstance} factory method to
@@ -71,9 +74,33 @@ public class FragmentResistration extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         //initialization
-        /////tableLayout = view.findViewById(R.id.tab);
+        tabLayout = view.findViewById(R.id.idTabLayout);
+        viewPager = view.findViewById(R.id.idViewPager);
+
+        TabLayoutAdapter adapter=new TabLayoutAdapter(getContext(),getActivity().getSupportFragmentManager(),tabLayout.getTabCount());
+        viewPager.setAdapter(adapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(
+                new TabLayout.OnTabSelectedListener() {
+                    @Override
+                    public void onTabSelected(TabLayout.Tab tab) {
+                        viewPager.setCurrentItem(tab.getPosition());
+                    }
+
+                    @Override
+                    public void onTabUnselected(TabLayout.Tab tab) {
+
+                    }
+
+                    @Override
+                    public void onTabReselected(TabLayout.Tab tab) {
+
+                    }
+                }
+        );
+
     }
 
-    TableLayout tableLayout;
+    TabLayout tabLayout;
     ViewPager viewPager;
 }

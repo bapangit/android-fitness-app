@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView button_account;
+    FloatingActionButton button_account;
     FragmentResistration membersResistration;
     FragmentManager fragmentManager;
     @Override

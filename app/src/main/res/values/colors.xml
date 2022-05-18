@@ -8,8 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary_light">#baffff</color>
-    <color name="primary">#84ffff</color>
-    <color name="primary_dark">#000</color>
-    <color name="grey">#BBBBBB</color>
+    <color name="primary_light">#666666</color>
+    <color name="primary">#333333</color>
+    <color name="primary_dark">#202020</color>
+    <color name="accent">#BBBBBB</color>
 </resources>
