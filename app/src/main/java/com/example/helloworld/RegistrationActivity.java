@@ -13,7 +13,6 @@ import com.google.android.material.tabs.TabLayout;
 public class RegistrationActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
-    int USER_TYPE_MEMBER = 0,USER_TYPE_COACH=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +20,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.idTabLayout);
         viewPager = findViewById(R.id.idViewPager);
-        TabLayoutAdapter adapter=new TabLayoutAdapter(this,getSupportFragmentManager(),tabLayout.getTabCount(),USER_TYPE_MEMBER);
+        TabLayoutAdapter adapter=new TabLayoutAdapter(this,getSupportFragmentManager(),tabLayout.getTabCount(),getIntent().getIntExtra("USER_TYPE",0));
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(
