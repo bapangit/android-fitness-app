@@ -13,17 +13,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tabTextColor="@color/white"
-        app:tabIndicatorColor="@color/white">
+        app:tabIndicatorColor="@color/white"
+        android:background="@color/primary_dark">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Member" />
+            android:text="@string/login" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Coach" />
+            android:text="@string/registration" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager

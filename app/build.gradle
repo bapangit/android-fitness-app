@@ -25,6 +25,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    lintOptions {
+        disable 'ContentDescription'
+    }
 }
 
 dependencies {
@@ -36,4 +40,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     implementation 'com.google.android.material:material:1.6.0'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
 }

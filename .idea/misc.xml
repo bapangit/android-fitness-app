@@ -3,15 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hexaphor5/.gradle/caches/transforms-3/83a3f1d22377343828f93e04efac90b1/transformed/jetified-play-services-base-18.0.1/res/drawable/common_google_signin_btn_icon_dark.xml" value="0.1375" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable-v24/bg_rounded_corner_6.xml" value="0.1375" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2075" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/2.xml" value="0.1" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/bg_button_peal.xml" value="0.1375" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/bg_gradient_1.xml" value="0.1" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/bg_gradient_2.xml" value="0.1" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/bg_rounded_corner_5.xml" value="0.2" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
-        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout-v26/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_main2.xml" value="0.15604959384352288" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/activity_resistration.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_blank.xml" value="0.3146067415730337" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_choose_user_type.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_coach_login.xml" value="0.22402736212056434" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_coach_resistration.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_member_resistration.xml" value="0.22" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_member_login.xml" value="0.25" />
+        <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_member_resistration.xml" value="0.33" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_members_login.xml" value="0.10648148148148148" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_members_resistration.xml" value="0.22" />
         <entry key="..\:/Users/Hexaphor5/AndroidStudioProjects/HelloWorld/app/src/main/res/layout/fragment_resistration.xml" value="0.18" />

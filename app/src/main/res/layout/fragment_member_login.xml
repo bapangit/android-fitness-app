@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/amiko"
-        android:text="Member Registration"
+        android:text="Member Login"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,20 +30,9 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_editor_absoluteX="40dp"
-        app:layout_constraintVertical_bias="0">
+        app:layout_constraintVertical_bias="0.1">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_rounded_corner_5"
-            android:hint="Full Name"
-            android:inputType="textPersonName"
-            android:paddingStart="15dp"
-            android:textColor="@color/white"
-            android:textColorHint="#888888"
-            android:textCursorDrawable="@drawable/black_cursor"/>
+
 
         <EditText
             android:layout_width="match_parent"
@@ -65,18 +54,6 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/bg_rounded_corner_5"
             android:hint="Password"
-            android:inputType="textPassword"
-            android:paddingStart="15dp"
-            android:textColor="@color/white"
-            android:textColorHint="#888888"
-            android:textCursorDrawable="@drawable/black_cursor"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_rounded_corner_5"
-            android:hint="Confirm Password"
             android:inputType="textPassword"
             android:paddingStart="15dp"
             android:textColor="@color/white"
@@ -104,7 +81,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/bg_button_teal"
             android:gravity="center"
-            android:text="Sign Up"
+            android:text="Sign In"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
