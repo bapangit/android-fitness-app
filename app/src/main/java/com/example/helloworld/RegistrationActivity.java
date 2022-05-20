@@ -20,7 +20,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.idTabLayout);
         viewPager = findViewById(R.id.idViewPager);
-        TabLayoutAdapter adapter=new TabLayoutAdapter(this,getSupportFragmentManager(),tabLayout.getTabCount(),getIntent().getIntExtra("USER_TYPE",0));
+        TabLayoutAdapter adapter = new TabLayoutAdapter(this,getSupportFragmentManager(),tabLayout.getTabCount(),getIntent().getIntExtra("USER_TYPE",0));
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(

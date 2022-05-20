@@ -1,14 +1,8 @@
 package com.example.helloworld;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -26,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //main
         //attach listener
         button_account.setOnClickListener(this::onClick);
-
 
     }
 

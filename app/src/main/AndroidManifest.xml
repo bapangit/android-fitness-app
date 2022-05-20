@@ -14,15 +14,16 @@
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationActivity"
             android:exported="true"
-            android:theme="@style/AppThemeNoActionBar">
-        </activity>
+            android:theme="@style/AppThemeNoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/AppThemeNoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
