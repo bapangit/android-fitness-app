@@ -4,14 +4,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.Interpolator;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.helloworld.adapters.ViewPagerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.lang.reflect.Field;
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     FloatingActionButton button_account;
+    ViewPager pager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Set the ViewPager adapter
         ViewPagerAdapter adapter = new ViewPagerAdapter(this,getSupportFragmentManager());
-        ViewPager pager = (ViewPager) findViewById(R.id.idViewPagerPlans);
+        pager = (ViewPager) findViewById(R.id.idViewPagerPlans);
         pager.setAdapter(adapter);
 
     }
@@ -40,7 +49,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ft.commit();
         }
     }
-
-
-
 }
