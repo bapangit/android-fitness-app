@@ -9,7 +9,6 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface Api {
-
     @FormUrlEncoded
     @POST("registername")
     Call<Data> getName(@Field("name") String name);

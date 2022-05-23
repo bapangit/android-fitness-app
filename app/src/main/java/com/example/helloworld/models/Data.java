@@ -3,6 +3,7 @@ package com.example.helloworld.models;
 public class Data {
     private String name;
     private String email;
+    private String age;
 
     public String getName() {
         return name;
@@ -18,5 +19,13 @@ public class Data {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 }

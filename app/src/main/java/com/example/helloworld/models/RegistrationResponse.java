@@ -1,12 +1,9 @@
 package com.example.helloworld.models;
 
-
-import com.google.gson.annotations.SerializedName;
-
 public class RegistrationResponse {
     private String message;
-    private Errors errors;
-    private User user;
+    /*private Errors errors;
+    private User user;*/
 
     public String getMessage() {
         return message;
@@ -16,7 +13,7 @@ public class RegistrationResponse {
         this.message = message;
     }
 
-    public Errors getErrors() {
+    /*public Errors getErrors() {
         return errors;
     }
 
@@ -30,5 +27,5 @@ public class RegistrationResponse {
 
     public void setUser(User user) {
         this.user = user;
-    }
+    }*/
 }
