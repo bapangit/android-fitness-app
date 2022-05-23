@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Interpolator;
 import android.os.Bundle;
@@ -64,12 +65,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.id_account){
-            //startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
+            startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
 
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            /*FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.add(R.id.idFragmentContainerView,new ChooseUserTypeFragment(),"CHOOSE_USER");
             ft.addToBackStack(null);
-            ft.commit();
+            ft.commit();*/
         }
     }
     

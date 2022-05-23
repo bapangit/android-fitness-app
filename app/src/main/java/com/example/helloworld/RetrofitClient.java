@@ -9,7 +9,7 @@ public class RetrofitClient {
     private Api myApi;
 
     private RetrofitClient() {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://localhost:8000/")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://gym.apsdp.in/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         myApi = retrofit.create(Api.class);

@@ -1,21 +1,11 @@
 package com.example.helloworld.models;
 
-
-import com.google.gson.annotations.SerializedName;
-
 public class User {
-
-    @SerializedName("name")
     private String name;
-    @SerializedName("email")
     private String email;
-    @SerializedName("role_id")
     private Integer roleId;
-    @SerializedName("updated_at")
     private String updatedAt;
-    @SerializedName("created_at")
     private String createdAt;
-    @SerializedName("id")
     private Integer id;
 
     public String getName() {

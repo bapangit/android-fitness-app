@@ -18,7 +18,7 @@ public class TabLayoutAdapter extends FragmentPagerAdapter {
     int mTotalTabs;
     int userType;
 
-    public TabLayoutAdapter(Context context , FragmentManager fragmentManager , int totalTabs,int userType) {
+    public TabLayoutAdapter(Context context , FragmentManager fragmentManager , int totalTabs) {
         super(fragmentManager);
         mContext = context;
         mTotalTabs = totalTabs;
@@ -28,30 +28,14 @@ public class TabLayoutAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if(userType == 0){
-
-            switch (position) {
-                case 0:
-                    return new MemberLoginFragment();
-                case 1:
-                    return new MemberRegistrationFragment();
-                default:
-                    return null;
-
-            }
-        }else{
-
-            switch (position) {
-                case 0:
-                    return new CoachLoginFragment();
-                case 1:
-                    return new CoachRegistrationFragment();
-                default:
-                    return null;
-
-            }
-
-        }
+        //userType = 0; //maintaining usertype always member
+        switch (position) {
+            case 0:
+                return new MemberLoginFragment();
+            case 1:
+                return new MemberRegistrationFragment();
+            default:
+                return null;}
     }
 
     @Override
