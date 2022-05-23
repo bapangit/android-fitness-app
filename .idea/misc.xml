@@ -50,10 +50,17 @@
         <entry key="..\:/Users/Hexaphor5/Desktop/New folder/fitness-app/app/src/main/res/layout/layout__carouse_item.xml" value="0.271875" />
         <entry key="..\:/Users/Hexaphor5/Desktop/New folder/fitness-app/app/src/main/res/layout/layout_example.xml" value="0.20390625" />
         <entry key="..\:/Users/Hexaphor5/Desktop/New folder/fitness-app/app/src/main/res/layout/layout_slide_item.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/bapan/Desktop/New folder (2)/fitness-application/app/src/main/res/layout/activity_main.xml" value="0.42137271937445697" />
+        <entry key="..\:/Users/bapan/Desktop/New folder (2)/fitness-application/app/src/main/res/layout/activity_main2.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/bapan/Desktop/New folder (2)/fitness-application/app/src/main/res/layout/activity_resistration.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/bapan/Desktop/New folder (2)/fitness-application/app/src/main/res/layout/fragment_blank2.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/bapan/Desktop/New folder (2)/fitness-application/app/src/main/res/layout/fragment_coach_login.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/bapan/Desktop/New folder (2)/fitness-application/app/src/main/res/layout/fragment_member_resistration.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/bapan/Desktop/New folder (2)/fitness-application/app/src/main/res/xml/network_security_config.xml" value="0.2515625" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

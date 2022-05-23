@@ -12,6 +12,7 @@
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/teal_200</item>
+        <item name="android:windowBackground">@color/primary_dark</item>
     </style>
     <style name="EditText.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:textSize">18sp</item>

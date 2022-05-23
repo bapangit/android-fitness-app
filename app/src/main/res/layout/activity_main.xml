@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/primary">
+    tools:context=".MainActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -337,6 +336,34 @@
 
             </androidx.cardview.widget.CardView>
         </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/idViewPagerPlans"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <View
+                android:id="@+id/idViewIndicatorOne"
+                android:layout_width="32dp"
+                android:layout_height="2dp"
+                android:layout_margin="1dp"/>
+
+            <View
+                android:id="@+id/idViewIndicatorTwo"
+                android:layout_width="32dp"
+                android:layout_height="2dp"
+                android:layout_margin="1dp" />
+
+            <View
+                android:id="@+id/idViewIndicatorThree"
+                android:layout_width="32dp"
+                android:layout_height="2dp"
+                android:layout_margin="1dp"/>
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.fragment.app.FragmentContainerView
