@@ -6,6 +6,7 @@ import com.example.helloworld.models.RegistrationResponse;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 public interface Api {
@@ -14,6 +15,7 @@ public interface Api {
     Call<Data> getName(@Field("name") String name);
 
     @FormUrlEncoded
+    @Headers({"Accept: application/json"})
     @POST("register")
     Call<RegistrationResponse> register(@Field("name") String name, @Field("email") String email, @Field("password") String password, @Field("conf_password") String confPassword);
 }

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.helloworld.models.Data;
+import com.example.helloworld.models.Errors;
 import com.example.helloworld.models.RegistrationResponse;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -17,8 +18,16 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import org.json.JSONObject;
+
+import java.lang.annotation.Annotation;
+
+import kotlin.io.TextStreamsKt;
+import okhttp3.ResponseBody;
+import okhttp3.internal.http2.ErrorCode;
 import retrofit2.Call;
 import retrofit2.Callback;
+import retrofit2.Converter;
 import retrofit2.Response;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -33,8 +42,8 @@ public class MainActivity2 extends AppCompatActivity {
         fetchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fetch();
-                //registerUser();
+                //fetch();
+                registerUser();
             }
         });
         
@@ -49,10 +58,9 @@ public class MainActivity2 extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Data data = response.body();
 
-                    Toast.makeText(MainActivity2.this, data.getName()+" "+data.getEmail()+" "+data.getAge()+" "+response.code(), Toast.LENGTH_SHORT).show();
 
                 }else{
-                    Toast.makeText(MainActivity2.this,"unsuccessful "+response.code(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity2.this,"unsuccessful "+response.code()+" ", Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -66,18 +74,30 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
     void registerUser(){
-        Call<RegistrationResponse> call = RetrofitClient.getInstance().getMyApi().register("trht4rh","user4@gmail.com","password","passcode");
+        Call<RegistrationResponse> call = RetrofitClient.getInstance().getMyApi().register("name","user15@gmail.com","password","password");
         call.enqueue(new Callback<RegistrationResponse>() {
             @Override
             public void onResponse(Call<RegistrationResponse> call, Response<RegistrationResponse> response) {
-                Toast.makeText(MainActivity2.this, "response "+response.body().getMessage(), Toast.LENGTH_SHORT).show();
-                Log.d("jsonres",new GsonBuilder().setPrettyPrinting().create().toJson(response.body()));
+                if(response.isSuccessful()){
+                    RegistrationResponse data = response.body();
+                    Toast.makeText(MainActivity2.this, ""+data.getUser().getEmail(), Toast.LENGTH_SHORT).show();
+
+                }else{
+                    if(response.errorBody()!=null){
+                        RegistrationResponse errors = new Gson().fromJson(response.errorBody().charStream(), RegistrationResponse.class);
+                        Toast.makeText(MainActivity2.this, ""+errors.getErrors().getEmail().get(0), Toast.LENGTH_SHORT).show();
+                        
+                    }else{
+                        Toast.makeText(MainActivity2.this, "Something Went Wrong !", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
             }
 
             @Override
             public void onFailure(Call<RegistrationResponse> call, Throwable t) {
-                Toast.makeText(MainActivity2.this, "error "+t.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.d("mss",t.getMessage());
+                Log.d("errmsg",t.getMessage());
+                Toast.makeText(MainActivity2.this, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

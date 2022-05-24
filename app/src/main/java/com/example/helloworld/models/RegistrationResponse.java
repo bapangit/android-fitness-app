@@ -1,9 +1,16 @@
 package com.example.helloworld.models;
 
 public class RegistrationResponse {
+    private User user;
+    private  Errors errors;
     private String message;
-    /*private Errors errors;
-    private User user;*/
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public String getMessage() {
         return message;
@@ -13,19 +20,11 @@ public class RegistrationResponse {
         this.message = message;
     }
 
-    /*public Errors getErrors() {
+    public Errors getErrors() {
         return errors;
     }
 
     public void setErrors(Errors errors) {
         this.errors = errors;
     }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }*/
 }

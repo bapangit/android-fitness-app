@@ -3,9 +3,9 @@ package com.example.helloworld.models;
 public class User {
     private String name;
     private String email;
-    private Integer roleId;
-    private String updatedAt;
-    private String createdAt;
+    private Integer role_id;
+    private String updated_at;
+    private String created_at;
     private Integer id;
 
     public String getName() {
@@ -24,28 +24,28 @@ public class User {
         this.email = email;
     }
 
-    public Integer getRoleId() {
-        return roleId;
+    public Integer getRole_id() {
+        return role_id;
     }
 
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
+    public void setRole_id(Integer role_id) {
+        this.role_id = role_id;
     }
 
-    public String getUpdatedAt() {
-        return updatedAt;
+    public String getUpdated_at() {
+        return updated_at;
     }
 
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setUpdated_at(String updated_at) {
+        this.updated_at = updated_at;
     }
 
-    public String getCreatedAt() {
-        return createdAt;
+    public String getCreated_at() {
+        return created_at;
     }
 
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setCreated_at(String created_at) {
+        this.created_at = created_at;
     }
 
     public Integer getId() {
