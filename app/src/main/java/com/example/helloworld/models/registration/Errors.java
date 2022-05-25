@@ -1,12 +1,12 @@
-package com.example.helloworld.models;
+package com.example.helloworld.models.registration;
 
 import java.util.List;
 
 public class Errors {
-    private List<String> name = null;
-    private List<String> email = null;
-    private List<String> password = null;
-    private List<String> confPassword = null;
+    private List<String> name;
+    private List<String> email;
+    private List<String> password ;
+    private List<String> conf_password;
 
     public List<String> getName() {
         return name;
@@ -32,11 +32,11 @@ public class Errors {
         this.password = password;
     }
 
-    public List<String> getConfPassword() {
-        return confPassword;
+    public List<String> getConf_password() {
+        return conf_password;
     }
 
-    public void setConfPassword(List<String> confPassword) {
-        this.confPassword = confPassword;
+    public void setConf_password(List<String> conf_password) {
+        this.conf_password = conf_password;
     }
 }

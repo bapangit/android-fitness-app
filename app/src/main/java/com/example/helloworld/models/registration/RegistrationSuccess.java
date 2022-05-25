@@ -1,9 +1,8 @@
-package com.example.helloworld.models;
+package com.example.helloworld.models.registration;
 
-public class RegistrationResponse {
+public class RegistrationSuccess {
     private String message;
-    /*private Errors errors;
-    private User user;*/
+    private User user;
 
     public String getMessage() {
         return message;
@@ -13,19 +12,11 @@ public class RegistrationResponse {
         this.message = message;
     }
 
-    /*public Errors getErrors() {
-        return errors;
-    }
-
-    public void setErrors(Errors errors) {
-        this.errors = errors;
-    }
-
     public User getUser() {
         return user;
     }
 
     public void setUser(User user) {
         this.user = user;
-    }*/
+    }
 }
