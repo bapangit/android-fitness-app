@@ -1,6 +1,6 @@
-package com.example.helloworld.models.registration;
+package com.example.helloworld.models.login;
 
-public class RegistrationFailed {
+public class LoginError {
     private String message;
     private Errors errors;
 

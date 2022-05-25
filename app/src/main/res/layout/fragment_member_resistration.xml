@@ -111,7 +111,8 @@
             android:gravity="center"
             android:text="Sign Up"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <TextView
             android:layout_width="wrap_content"

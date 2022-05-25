@@ -35,6 +35,7 @@
 
 
         <EditText
+            android:id="@+id/idEditTextEmailField"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginTop="10dp"
@@ -48,6 +49,7 @@
             android:textCursorDrawable="@drawable/black_cursor"/>
 
         <EditText
+            android:id="@+id/idEditTextPasswordField"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginTop="10dp"
@@ -73,6 +75,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
+            android:id="@+id/idButtonSignIn"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginStart="40dp"
@@ -83,7 +86,8 @@
             android:gravity="center"
             android:text="Sign In"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <TextView
             android:layout_width="wrap_content"

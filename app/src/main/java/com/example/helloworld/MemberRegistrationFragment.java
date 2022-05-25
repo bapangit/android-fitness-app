@@ -7,7 +7,6 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.helloworld.models.registration.RegistrationFailed;
+import com.example.helloworld.models.registration.RegistrationError;
 import com.example.helloworld.models.registration.RegistrationSuccess;
 import com.google.gson.Gson;
 import com.skydoves.balloon.ArrowOrientation;
@@ -61,7 +60,7 @@ public class MemberRegistrationFragment extends Fragment {
                 if(response.isSuccessful()){
                     Toast.makeText(getContext(), ""+response.body().getUser().getEmail(), Toast.LENGTH_SHORT).show();
                 }else {
-                    RegistrationFailed errors = new Gson().fromJson(response.errorBody().charStream(), RegistrationFailed.class);
+                    RegistrationError errors = new Gson().fromJson(response.errorBody().charStream(), RegistrationError.class);
                     if(errors.getErrors().getName()!= null){
                         Balloon balloon = new Balloon.Builder(getContext())
                                 .setArrowSize(10)
@@ -148,7 +147,7 @@ public class MemberRegistrationFragment extends Fragment {
 
             @Override
             public void onFailure(Call<RegistrationSuccess> call, Throwable t) {
-
+                Toast.makeText(getContext(), "Something went wrong!", Toast.LENGTH_SHORT).show();
             }
         });
     }
