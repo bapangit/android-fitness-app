@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/amiko"
-        android:text="Member Login"
+        android:text="@string/member_login"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,12 +41,14 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/bg_rounded_corner_20"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:paddingStart="15dp"
             android:textColor="@color/white"
             android:textColorHint="#888888"
-            android:textCursorDrawable="@drawable/black_cursor"/>
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="7dp"/>
 
         <EditText
             android:id="@+id/idEditTextPasswordField"
@@ -55,12 +57,14 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/bg_rounded_corner_20"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="15dp"
             android:textColor="@color/white"
             android:textColorHint="#888888"
-            android:textCursorDrawable="@drawable/black_cursor"/>
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="7dp"/>
 
 
     </LinearLayout>
@@ -84,7 +88,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/bg_button_teal"
             android:gravity="center"
-            android:text="Sign In"
+            android:text="@string/sign_in"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:foreground="?android:attr/selectableItemBackground"/>
@@ -92,7 +96,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OR"
+            android:text="@string/or"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
@@ -107,7 +111,7 @@
             android:background="@drawable/bg_rounded_corner_20"
             android:gravity="center"
             android:orientation="horizontal"
-            android:text="Sign Up"
+            android:text="@string/sign_in"
             android:textColor="@color/white"
             android:textSize="16sp">
 
@@ -120,10 +124,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Continue With Google"
+                android:text="@string/continue_with_google"
                 android:textColor="@color/white"
                 android:textSize="16sp"
-                android:layout_marginLeft="25dp"/>
+                android:layout_marginStart="25dp"/>
         </LinearLayout>
 
 

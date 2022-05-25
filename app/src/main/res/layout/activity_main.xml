@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="Services"
+            android:text="@string/services"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:fontFamily="@font/alatsi"
@@ -143,16 +143,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:layout_constraintVertical_bias="0">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -173,7 +171,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:fontFamily="@font/alatsi"
-                            android:text="Diet Plan For Cholesterol"
+                            android:text="@string/diet_plan_for_cholesterol"
                             android:textColor="@color/white"
                             android:textSize="12sp" />
 
@@ -198,25 +196,22 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:fontFamily="@font/alatsi"
-                            android:text="Hypothyroidism Program"
+                            android:text="@string/hypothyroidism_program"
                             android:textColor="@color/white"
                             android:textSize="12sp"/>
                     </LinearLayout>
 
                 </LinearLayout>
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -235,7 +230,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Fat Loss / Weight Loss"
+                            android:text="@string/fat_loss_weight_loss"
                             android:textColor="@color/white"
                             android:textSize="12sp"
                             android:fontFamily="@font/alatsi"/>
@@ -257,7 +252,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Gym (Body Building)"
+                            android:text="@string/gym_body_building"
                             android:textColor="@color/white"
                             android:textSize="12sp"
                             android:fontFamily="@font/alatsi"/>
@@ -265,18 +260,13 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -294,7 +284,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Body Toning"
+                            android:text="@string/body_toning"
                             android:textColor="@color/white"
                             android:textSize="12sp"
                             android:fontFamily="@font/alatsi"/>
@@ -316,7 +306,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Diabetes"
+                            android:text="@string/diabetes"
                             android:textColor="@color/white"
                             android:textSize="12sp"
                             android:fontFamily="@font/alatsi"/>
@@ -324,7 +314,6 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
 
 
         </LinearLayout>
@@ -335,7 +324,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="Plans"
+            android:text="@string/plans"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:fontFamily="@font/alatsi"
