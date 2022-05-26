@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewIndicatorTwo = findViewById(R.id.idViewIndicatorTwo);
         viewIndicatorThree = findViewById(R.id.idViewIndicatorThree);
         //main
+
         //attach listener
         button_account.setOnClickListener(this::onClick);
 
@@ -65,8 +66,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.id_account){
-            startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
-
+            startActivity(new Intent(MainActivity.this, new SharedPreferencesData(this).getToken()!=null?DashBoardActivity.class:RegistrationActivity.class));
+            
             /*FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.add(R.id.idFragmentContainerView,new ChooseUserTypeFragment(),"CHOOSE_USER");
             ft.addToBackStack(null);

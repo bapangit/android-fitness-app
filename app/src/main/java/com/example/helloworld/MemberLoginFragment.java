@@ -1,5 +1,6 @@
 package com.example.helloworld;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -62,7 +63,10 @@ public class MemberLoginFragment extends Fragment {
             @Override
             public void onResponse(Call<LoginSuccess> call, Response<LoginSuccess> response) {
                 if(response.isSuccessful()){
-                    Toast.makeText(getContext(), ""+response.body().getToken(), Toast.LENGTH_SHORT).show();
+                    new SharedPreferencesData(getContext()).setToken(response.body().getToken());
+                    startActivity(new Intent(getContext(),DashBoardActivity.class));
+                    getActivity().finish();
+
                 }else{
                     if(response.code()==422){
                         LoginError errors = new Gson().fromJson(response.errorBody().charStream(), LoginError.class);
